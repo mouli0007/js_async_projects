@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  /* background-color: blueviolet; */
+  height: 100vh;
+}
+
+.slider-container {
+  width: 90vw;
+  height: 70vh;
+  background: url("./bg-cover.png") center center/cover no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 1rem;
+  background-color: blueviolet;
+  position: relative;
+  border-radius: 10px;
+}
+
+.slide {
+  /* margin-left: 2rem; */
+  /* background-color: red; */
+  flex-direction: row;
+  margin-top: 20px;
+  text-align: center;
+  width: 27%;
+  padding: 0.5rem;
+  background: url("./wheel-bg.jpg") center center/cover no-repeat;
+  background-color: red;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 40%;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  position: absolute;
+  top: 260px;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.25rem;
+  border: transparent;
+  cursor: pointer;
+  height: 1.8rem;
+  width: 2.4rem;
+  font-weight: bold;
+}
+
+.next-btn {
+  right: 1rem;
+}
+
+.prev-btn {
+  left: 1rem;
+}
+
+.active {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.inactive {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.alert {
+  text-align: center;
+  color: blueviolet;
+  margin-bottom: 2rem;
+}
+
+.wheel-name {
+  text-align: center;
+  color: tomato;
+}
+
+.thanks {
+  text-align: center;
+  color: rgb(71, 46, 234);
+}
+p {
+  margin-top: 2rem;
+}
+
+span {
+  display: block;
+  color: tomato;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.wheel-btn {
+  margin-top: 1rem;
+  padding: 0.25rem 0.45rem;
+  width: 70%;
+  font-size: 1rem;
+  border: none;
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: blueviolet;
+}
